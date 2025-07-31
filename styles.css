@@ -1,0 +1,1173 @@
+/* 넥슨 폰트 적용 */
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NEXON Lv1 Gothic OTF Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* 제품 섹션 스타일 */
+.product-section {
+    /* 안쪽 여백 설정 */
+    padding: 80px 0;
+    /* 배경색 설정 */
+    background-color: #f9f9f9;
+}
+
+/* 컨테이너 */
+.container {
+    /* 최대 너비 설정 */
+    max-width: 1200px;
+    /* 가운데 정렬 */
+    margin: 0 auto;
+    /* 안쪽 여백 설정 */
+    padding: 0 20px;
+}
+
+/* 매장 대표 이미지 컨테이너 */
+.ceo-image-container {
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 50px;
+}
+
+/* 매장 대표 이미지 */
+.ceo-image {
+    /* 최대 너비 설정 */
+    max-width: 100%;
+    /* 높이 자동 조정 */
+    height: auto;
+    /* 모서리 둥글게 설정 */
+    border-radius: 10px;
+    /* 그림자 효과 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 제품 소개 제목 */
+.product-title {
+    /* 글자 크기 설정 */
+    font-size: 2.5rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 40px;
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 글자 색상 설정 */
+    color: #000000;
+}
+
+/* 제품 그리드 */
+.product-grid {
+    /* 그리드 레이아웃 설정 */
+    display: grid;
+    /* 2x2 그리드 설정 (기본적으로 2열) */
+    grid-template-columns: repeat(2, 1fr);
+    /* 그리드 간격 설정 */
+    gap: 40px;
+}
+
+/* 제품 아이템 */
+.product-item {
+    /* 배경색 설정 */
+    background-color: #ffffff;
+    /* 테두리 설정 */
+    border: 1px solid #f0f0f0;
+    /* 모서리 둥글게 설정 */
+    border-radius: 10px;
+    /* 그림자 효과 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* 넘치는 내용 숨기기 */
+    overflow: hidden;
+    /* 부드럽게 변하는 효과 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 제품 아이템에 마우스를 올렸을 때 */
+.product-item:hover {
+    /* 약간 위로 올라가는 효과 */
+    transform: translateY(-5px);
+    /* 그림자 효과 강화 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 제품 이미지 컨테이너 */
+.product-image-container {
+    /* 높이 설정 */
+    height: 250px;
+    /* 넘치는 내용 숨기기 */
+    overflow: hidden;
+    /* 이미지 여러 개를 가로로 배치 */
+    display: flex;
+}
+
+/* 제품 이미지 */
+.product-image {
+    /* 너비 설정 - 이미지가 여러 개일 경우 공간 분배 */
+    flex: 1;
+    /* 높이 100% */
+    height: 100%;
+    /* 이미지가 컨테이너를 채우도록 설정 */
+    object-fit: cover;
+    /* 좌우 여백 설정 (가이드에 따라 3px) */
+    margin: 0 3px;
+    /* 부드럽게 변하는 효과 */
+    transition: transform 0.5s ease;
+}
+
+/* 제품 이미지에 마우스를 올렸을 때 */
+.product-item:hover .product-image {
+    /* 이미지 확대 효과 */
+    transform: scale(1.05);
+}
+
+/* 제품 정보 */
+.product-info {
+    /* 안쪽 여백 설정 */
+    padding: 20px;
+}
+
+/* 제품 정보 내 h3 태그 (제품 이름) */
+.product-info h3 {
+    /* 글자 크기 설정 */
+    font-size: 1.8rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 10px;
+    /* 글자 색상 설정 */
+    color: #000000;
+}
+
+/* 제품 정보 내 p 태그 (제품 설명) */
+.product-info p {
+    /* 글자 크기 설정 */
+    font-size: 1rem;
+    /* 글자 색상 설정 */
+    color: #666666;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 15px;
+    /* 줄 높이 설정 */
+    line-height: 1.6;
+}
+
+/* 가격 목록 */
+.price-list {
+    /* 위쪽 여백 설정 */
+    margin-top: 20px;
+    /* 테두리 설정 */
+    border-top: 1px solid #f0f0f0;
+    /* 위쪽 안쪽 여백 설정 */
+    padding-top: 15px;
+}
+
+/* 가격 목록 내 h4 태그 (가격 제목) */
+.price-list h4 {
+    /* 글자 크기 설정 */
+    font-size: 1.2rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 10px;
+    /* 글자 색상 설정 */
+    color: #000000;
+}
+
+/* 가격 목록 내 ul 태그 */
+.price-list ul {
+    /* 목록 스타일 제거 */
+    list-style: none;
+    /* 여백 제거 */
+    padding: 0;
+    margin: 0;
+}
+
+/* 가격 목록 내 li 태그 (각 가격 항목) */
+.price-list li {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 5px;
+    /* 글자 크기 설정 */
+    font-size: 0.95rem;
+    /* 글자 색상 설정 */
+    color: #333333;
+}
+
+/* 리뷰 섹션 스타일 */
+.review-section {
+    /* 안쪽 여백 설정 */
+    padding: 80px 0;
+    /* 배경색 설정 */
+    background-color: #ffffff;
+}
+
+/* 섹션 제목 스타일 */
+.section-title {
+    /* 글자 크기 설정 */
+    font-size: 2.5rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 40px;
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 글자 색상 설정 */
+    color: #000000;
+}
+
+/* 리뷰 그리드 */
+.review-grid {
+    /* 그리드 레이아웃 설정 */
+    display: grid;
+    /* 3x2 그리드 설정 (기본적으로 3열) */
+    grid-template-columns: repeat(3, 1fr);
+    /* 그리드 간격 설정 */
+    gap: 30px;
+}
+
+/* 리뷰 카드 */
+.review-card {
+    /* 배경색 설정 */
+    background-color: #f9f9f9;
+    /* 테두리 설정 */
+    border: 1px solid #f0f0f0;
+    /* 모서리 둥글게 설정 */
+    border-radius: 10px;
+    /* 그림자 효과 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* 안쪽 여백 설정 */
+    padding: 25px;
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 부드럽게 변하는 효과 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 리뷰 카드에 마우스를 올렸을 때 */
+.review-card:hover {
+    /* 약간 위로 올라가는 효과 */
+    transform: translateY(-5px);
+    /* 그림자 효과 강화 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 별점 스타일 */
+.rating {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 15px;
+    /* 글자 크기 설정 */
+    font-size: 1.5rem;
+}
+
+/* 별 아이콘 스타일 */
+.star {
+    /* 글자 색상 설정 (노란색 별) */
+    color: #FFD700;
+    /* 별 사이 간격 설정 */
+    margin: 0 2px;
+}
+
+/* 고객 이름 스타일 */
+.customer-name {
+    /* 글자 크기 설정 */
+    font-size: 1.3rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 10px;
+    /* 글자 색상 설정 */
+    color: #000000;
+}
+
+/* 리뷰 텍스트 스타일 */
+.review-text {
+    /* 글자 크기 설정 */
+    font-size: 1rem;
+    /* 글자 색상 설정 */
+    color: #666666;
+    /* 줄 높이 설정 */
+    line-height: 1.6;
+    /* 텍스트 정렬 설정 */
+    text-align: center;
+}
+
+/* 모바일 화면에 대한 반응형 스타일 */
+@media (max-width: 768px) {
+    /* 리뷰 그리드를 1열로 변경 */
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 섹션 제목 글자 크기 조정 */
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* 리뷰 카드 안쪽 여백 조정 */
+    .review-card {
+        padding: 20px;
+    }
+    
+    /* 별점 크기 조정 */
+    .rating {
+        font-size: 1.3rem;
+    }
+    
+    /* 고객 이름 크기 조정 */
+    .customer-name {
+        font-size: 1.2rem;
+    }
+}
+
+/* 태블릿 화면에 대한 반응형 스타일 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* 리뷰 그리드를 2열로 변경 */
+    .review-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 인사말 섹션 스타일 */
+.greeting-section {
+    /* 안쪽 여백 설정 */
+    padding: 80px 0;
+    /* 배경색 설정 */
+    background-color: #f9f9f9;
+}
+
+/* 인사말 컨텐츠 영역 */
+.greeting-content {
+    /* 그리드 레이아웃 설정 */
+    display: grid;
+    /* 2열 그리드 설정 (좌측 이미지, 우측 텍스트) */
+    grid-template-columns: 1fr 2fr;
+    /* 그리드 간격 설정 */
+    gap: 50px;
+    /* 아이템 세로 가운데 정렬 */
+    align-items: center;
+}
+
+/* CEO 프로필 이미지 컨테이너 */
+.ceo-profile-image {
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+}
+
+/* CEO 프로필 이미지 */
+.ceo-profile {
+    /* 최대 너비 설정 */
+    max-width: 100%;
+    /* 높이 자동 조정 */
+    height: auto;
+    /* 모서리 둥글게 설정 */
+    border-radius: 10px;
+    /* 그림자 효과 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 인사말 텍스트 컨테이너 */
+.greeting-text-container {
+    /* 배경색 설정 */
+    background-color: #ffffff;
+    /* 테두리 설정 */
+    border: 1px solid #f0f0f0;
+    /* 모서리 둥글게 설정 */
+    border-radius: 10px;
+    /* 그림자 효과 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    /* 안쪽 여백 설정 */
+    padding: 30px;
+}
+
+/* 인사말 텍스트 */
+.greeting-text {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 30px;
+    /* 테두리 설정 */
+    border-bottom: 1px solid #f0f0f0;
+    /* 아래쪽 안쪽 여백 설정 */
+    padding-bottom: 20px;
+}
+
+/* 인사말 강조 텍스트 */
+.greeting-highlight {
+    /* 글자 크기 설정 */
+    font-size: 1.3rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 글자 색상 설정 */
+    color: #000000;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 15px;
+}
+
+/* 인사말 텍스트 내 p 태그 */
+.greeting-text p {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 15px;
+    /* 글자 크기 설정 */
+    font-size: 1rem;
+    /* 글자 색상 설정 */
+    color: #333333;
+    /* 줄 높이 설정 */
+    line-height: 1.6;
+}
+
+/* CEO 서명 스타일 */
+.ceo-signature {
+    /* 글자 정렬 설정 */
+    text-align: right;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 위쪽 여백 설정 */
+    margin-top: 20px;
+}
+
+/* 더보기/닫기 버튼 컨테이너 */
+.greeting-buttons {
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 위쪽 여백 설정 */
+    margin-top: 20px;
+}
+
+/* 더보기/닫기 버튼 */
+.greeting-btn {
+    /* 배경색 설정 */
+    background-color: #000000;
+    /* 글자 색상 설정 */
+    color: #ffffff;
+    /* 테두리 제거 */
+    border: none;
+    /* 모서리 둥글게 설정 */
+    border-radius: 5px;
+    /* 안쪽 여백 설정 */
+    padding: 10px 20px;
+    /* 글자 크기 설정 */
+    font-size: 0.9rem;
+    /* 커서 모양 설정 */
+    cursor: pointer;
+    /* 부드럽게 변하는 효과 */
+    transition: background-color 0.3s ease;
+}
+
+/* 더보기/닫기 버튼에 마우스를 올렸을 때 */
+.greeting-btn:hover {
+    /* 배경색 변경 */
+    background-color: #333333;
+}
+
+/* 고객센터 연락처 정보 */
+.contact-info {
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+}
+
+/* 고객센터 연락처 정보 내 p 태그 */
+.contact-info p {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 10px;
+    /* 글자 크기 설정 */
+    font-size: 1rem;
+    /* 글자 색상 설정 */
+    color: #333333;
+}
+
+/* 전화번호 스타일 */
+.phone-number {
+    /* 글자 크기 설정 */
+    font-size: 1.5rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 글자 색상 설정 */
+    color: #000000;
+}
+
+/* 모바일 화면에 대한 반응형 스타일 */
+@media (max-width: 768px) {
+    /* 인사말 컨텐츠 영역 조정 */
+    .greeting-content {
+        /* 1열 그리드로 변경 */
+        grid-template-columns: 1fr;
+        /* 그리드 간격 조정 */
+        gap: 30px;
+    }
+    
+    /* CEO 프로필 이미지 조정 */
+    .ceo-profile {
+        /* 최대 너비 조정 */
+        max-width: 80%;
+    }
+    
+    /* 인사말 텍스트 컨테이너 조정 */
+    .greeting-text-container {
+        /* 안쪽 여백 조정 */
+        padding: 20px;
+    }
+    
+    /* 인사말 강조 텍스트 조정 */
+    .greeting-highlight {
+        /* 글자 크기 조정 */
+        font-size: 1.2rem;
+    }
+    
+    /* 전화번호 스타일 조정 */
+    .phone-number {
+        /* 글자 크기 조정 */
+        font-size: 1.3rem;
+    }
+}
+
+/* 푸터 섹션 스타일 */
+.footer-section {
+    /* 배경색 설정 */
+    background-color: #222222;
+    /* 글자 색상 설정 */
+    color: #ffffff;
+    /* 안쪽 여백 설정 */
+    padding: 50px 0 30px;
+    /* 위쪽 여백 설정 */
+    margin-top: 50px;
+}
+
+/* 푸터 상단 영역 - 이용약관 및 개인정보처리방침 */
+.footer-top {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 30px;
+    /* 아래쪽 테두리 설정 */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* 아래쪽 안쪽 여백 설정 */
+    padding-bottom: 20px;
+}
+
+/* 푸터 링크 스타일 */
+.footer-links {
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+}
+
+/* 푸터 링크 아이템 */
+.footer-link {
+    /* 글자 색상 설정 */
+    color: #ffffff;
+    /* 밑줄 제거 */
+    text-decoration: none;
+    /* 글자 크기 설정 */
+    font-size: 1rem;
+    /* 글자 굵기 설정 */
+    font-weight: 500;
+    /* 부드럽게 변하는 효과 */
+    transition: color 0.3s ease;
+}
+
+/* 푸터 링크에 마우스를 올렸을 때 */
+.footer-link:hover {
+    /* 글자 색상 변경 */
+    color: #cccccc;
+}
+
+/* 푸터 링크 구분선 */
+.footer-divider {
+    /* 좌우 여백 설정 */
+    margin: 0 15px;
+    /* 글자 색상 설정 */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 푸터 중간 영역 - 회사 정보 */
+.footer-middle {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 30px;
+}
+
+/* 푸터 정보 스타일 */
+.footer-info {
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 최대 너비 설정 */
+    max-width: 800px;
+    /* 좌우 가운데 정렬 */
+    margin: 0 auto;
+}
+
+/* 푸터 정보 아이템 */
+.footer-info-item {
+    /* 글자 크기 설정 */
+    font-size: 0.9rem;
+    /* 글자 색상 설정 */
+    color: rgba(255, 255, 255, 0.7);
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 8px;
+    /* 줄 높이 설정 */
+    line-height: 1.5;
+}
+
+/* 푸터 하단 영역 - 소셜 미디어 링크 */
+.footer-bottom {
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 위쪽 테두리 설정 */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    /* 위쪽 안쪽 여백 설정 */
+    padding-top: 20px;
+}
+
+/* 소셜 미디어 링크 컨테이너 */
+.social-links {
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 20px;
+    /* 가로로 나란히 정렬 */
+    display: flex;
+    /* 가운데 정렬 */
+    justify-content: center;
+    /* 간격 설정 */
+    gap: 20px;
+}
+
+/* 소셜 미디어 링크 아이템 */
+.social-link {
+    /* 배경색 설정 */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* 너비 설정 */
+    width: 40px;
+    /* 높이 설정 */
+    height: 40px;
+    /* 모서리 둥글게 설정 */
+    border-radius: 50%;
+    /* 가로로 나란히 정렬 */
+    display: flex;
+    /* 가운데 정렬 */
+    justify-content: center;
+    /* 세로 가운데 정렬 */
+    align-items: center;
+    /* 부드럽게 변하는 효과 */
+    transition: background-color 0.3s ease;
+}
+
+/* 소셜 미디어 링크에 마우스를 올렸을 때 */
+.social-link:hover {
+    /* 배경색 변경 */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 소셜 미디어 아이콘 */
+.social-icon {
+    /* 너비 설정 */
+    width: 20px;
+    /* 높이 설정 */
+    height: 20px;
+    /* 필터 설정 - 흰색으로 변경 */
+    filter: brightness(0) invert(1);
+}
+
+/* 저작권 텍스트 */
+.copyright {
+    /* 글자 크기 설정 */
+    font-size: 0.8rem;
+    /* 글자 색상 설정 */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 반응형 디자인 - 모바일 화면 */
+@media (max-width: 768px) {
+    /* 푸터 섹션 스타일 조정 */
+    .footer-section {
+        /* 안쪽 여백 조정 */
+        padding: 30px 0 20px;
+    }
+    
+    /* 푸터 링크 아이템 조정 */
+    .footer-link {
+        /* 글자 크기 조정 */
+        font-size: 0.9rem;
+    }
+    
+    /* 푸터 링크 구분선 조정 */
+    .footer-divider {
+        /* 좌우 여백 조정 */
+        margin: 0 10px;
+    }
+    
+    /* 푸터 정보 아이템 조정 */
+    .footer-info-item {
+        /* 글자 크기 조정 */
+        font-size: 0.8rem;
+        /* 아래쪽 여백 조정 */
+        margin-bottom: 6px;
+    }
+    
+    /* 소셜 미디어 링크 아이템 조정 */
+    .social-link {
+        /* 너비 조정 */
+        width: 35px;
+        /* 높이 조정 */
+        height: 35px;
+    }
+    
+    /* 소셜 미디어 아이콘 조정 */
+    .social-icon {
+        /* 너비 조정 */
+        width: 18px;
+        /* 높이 조정 */
+        height: 18px;
+    }
+    
+    /* 저작권 텍스트 조정 */
+    .copyright {
+        /* 글자 크기 조정 */
+        font-size: 0.7rem;
+    }
+    
+    /* 제품 섹션 스타일 조정 */
+    .product-section {
+        /* 안쪽 여백 조정 */
+        padding: 50px 0;
+    }
+    
+    /* 제품 소개 제목 조정 */
+    .product-title {
+        /* 글자 크기 조정 */
+        font-size: 2rem;
+        /* 아래쪽 여백 조정 */
+        margin-bottom: 30px;
+    }
+    
+    /* 제품 그리드 조정 - 모바일에서는 1열로 변경 */
+    .product-grid {
+        /* 1열 그리드로 변경 */
+        grid-template-columns: 1fr;
+        /* 그리드 간격 조정 */
+        gap: 30px;
+    }
+    
+    /* 제품 이미지 컨테이너 조정 */
+    .product-image-container {
+        /* 높이 조정 */
+        height: 200px;
+    }
+    
+    /* 제품 정보 내 h3 태그 조정 */
+    .product-info h3 {
+        /* 글자 크기 조정 */
+        font-size: 1.5rem;
+    }
+}
+
+/* 전체 페이지 기본 스타일 */
+* {
+    /* 모든 요소의 여백을 0으로 설정해요 */
+    margin: 0;
+    /* 모든 요소의 패딩을 0으로 설정해요 */
+    padding: 0;
+    /* 요소의 크기 계산 방식을 border-box로 설정해요 */
+    box-sizing: border-box;
+}
+
+body {
+    /* 넥슨 폰트를 기본 글꼴로 설정해요 */
+    font-family: 'NEXON Lv1 Gothic OTF', sans-serif;
+    /* 글자 색상을 검정색으로 설정해요 */
+    color: #000000;
+    /* 배경색을 흰색으로 설정해요 */
+    background-color: #ffffff;
+    /* 줄 간격을 1.5배로 설정해요 */
+    line-height: 1.5;
+}
+
+/* 헤더 전체를 꾸며요 */
+.main-header {
+    /* 가로로 나란히 정렬해요 */
+    display: flex;
+    /* 세로 가운데로 배치해요 */
+    align-items: center;
+    /* 양쪽 끝과 가운데로 배치해요 */
+    justify-content: space-between;
+    /* 사이사이 간격을 10px로 해요 */
+    gap: 10px;
+    /* 배경색을 흰색으로 설정해요 */
+    background-color: #ffffff;
+    /* 안쪽 여백을 설정해요 */
+    padding: 15px 40px;
+    /* 상단에 고정시켜요 */
+    position: sticky;
+    top: 0;
+    /* 다른 요소보다 앞에 보이게 해요 */
+    z-index: 1000;
+    /* 아래쪽에 그림자를 넣어요 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 로고 이미지 */
+.logo {
+    /* 로고 크기를 설정해요 */
+    width: 40px;
+    height: 40px;
+    /* 이미지가 찌그러지지 않게 해요 */
+    object-fit: contain;
+}
+
+/* 브랜드 이름 */
+.brand-name {
+    /* 글자 크기를 설정해요 */
+    font-size: 1.2rem;
+    /* 글자를 굵게 표시해요 */
+    font-weight: bold;
+    /* 글자 색상을 설정해요 */
+    color: #000000;
+}
+
+/* 메뉴 네비게이션 */
+.main-nav {
+    /* 가로로 나란히 정렬해요 */
+    display: flex;
+    /* 사이사이 간격을 20px로 해요 */
+    gap: 20px;
+    /* 가운데 정렬해요 */
+    justify-content: center;
+}
+
+/* 메뉴 링크 */
+.main-nav a {
+    /* 링크의 밑줄을 없애요 */
+    text-decoration: none;
+    /* 글자 색상을 설정해요 */
+    color: #000000;
+    /* 글자 크기를 설정해요 */
+    font-size: 1rem;
+    /* 글자를 굵게 표시해요 */
+    font-weight: 500;
+    /* 안쪽 여백을 설정해요 */
+    padding: 5px 10px;
+    /* 부드럽게 변하는 효과를 넣어요 */
+    transition: all 0.3s ease;
+}
+
+/* 메뉴에 마우스를 올렸을 때 */
+.main-nav a:hover {
+    /* 글자 색상을 변경해요 */
+    color: #555555;
+}
+
+/* 로그인 버튼 */
+.login-btn {
+    /* 배경색을 흰색으로 설정해요 */
+    background-color: #ffffff;
+    /* 글자 색상을 검정색으로 설정해요 */
+    color: #000000;
+    /* 테두리를 검정색으로 설정해요 */
+    border: 1px solid #000000;
+    /* 모서리를 둥글게 만들어요 (radius 25) */
+    border-radius: 25px;
+    /* 안쪽 여백을 설정해요 */
+    padding: 8px 20px;
+    /* 글자 크기를 설정해요 */
+    font-size: 0.9rem;
+    /* 글자를 굵게 표시해요 */
+    font-weight: 500;
+    /* 마우스 커서를 손가락 모양으로 바꿔요 */
+    cursor: pointer;
+    /* 부드럽게 변하는 효과를 넣어요 */
+    transition: all 0.3s ease;
+}
+
+/* 로그인 버튼에 마우스를 올렸을 때 */
+.login-btn:hover {
+    /* 배경색을 연한 회색으로 변경해요 */
+    background-color: #f5f5f5;
+    /* 그림자 효과를 넣어요 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 히어로 캐러셀 영역 */
+.hero-carousel {
+    /* 상대적 위치 설정 */
+    position: relative;
+    /* 넘치는 내용 숨기기 */
+    overflow: hidden;
+    /* 높이 설정 (화면 높이의 100%) */
+    height: 100vh;
+    /* 최소 높이 설정 */
+    min-height: 500px;
+    /* 최대 높이 설정 */
+    max-height: 900px;
+    /* 너비를 100%로 설정 */
+    width: 100%;
+}
+
+/* 슬라이드들을 감싸는 컨테이너 */
+.slides {
+    /* 높이를 100%로 설정 */
+    height: 100%;
+    /* 너비를 100%로 설정 */
+    width: 100%;
+    /* 상대적 위치 설정 */
+    position: relative;
+}
+
+/* 개별 슬라이드 */
+.slide {
+    /* 절대적 위치 설정 */
+    position: absolute;
+    /* 상단 위치 0 */
+    top: 0;
+    /* 왼쪽 위치 0 */
+    left: 0;
+    /* 높이를 100%로 설정 */
+    height: 100%;
+    /* 너비를 100%로 설정 */
+    width: 100%;
+    /* 배경 이미지 설정 */
+    background-size: cover;
+    /* 배경 이미지 위치 */
+    background-position: center;
+    /* 투명도 0으로 설정 (안 보임) */
+    opacity: 0;
+    /* 부드럽게 변하는 효과 */
+    transition: opacity 1s ease-in-out;
+    /* 다른 요소보다 뒤에 배치 */
+    z-index: 1;
+}
+
+/* 활성화된 슬라이드 */
+.slide.active {
+    /* 투명도 1로 설정 (보임) */
+    opacity: 1;
+    /* 다른 요소보다 앞에 배치 */
+    z-index: 2;
+}
+
+/* 슬라이드 내용 */
+.slide-content {
+    /* 절대적 위치 설정 */
+    position: absolute;
+    /* 상단에서 50% 위치 */
+    top: 50%;
+    /* 왼쪽에서 50% 위치 */
+    left: 50%;
+    /* 변환: 중앙 정렬 */
+    transform: translate(-50%, -50%);
+    /* 텍스트 가운데 정렬 */
+    text-align: center;
+    /* 글자 색상 흰색 */
+    color: #ffffff;
+    /* 너비 설정 */
+    width: 80%;
+    /* 최대 너비 설정 */
+    max-width: 800px;
+    /* 그림자 효과로 텍스트 가독성 높이기 */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 브랜드 타이틀 */
+.brand-title {
+    /* 글자 크기 설정 */
+    font-size: 3rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 1rem;
+    /* 글자 간격 설정 */
+    letter-spacing: 1px;
+}
+
+/* 슬라이드 내용의 h3 태그 */
+.slide-content h3 {
+    /* 글자 크기 설정 */
+    font-size: 1.8rem;
+    /* 글자 굵기 설정 */
+    font-weight: 500;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 1rem;
+}
+
+/* 슬라이드 내용의 p 태그 */
+.slide-content p {
+    /* 글자 크기 설정 */
+    font-size: 1.2rem;
+    /* 아래쪽 여백 설정 */
+    margin-bottom: 2rem;
+    /* 줄 높이 설정 */
+    line-height: 1.6;
+}
+
+/* 예약하기 버튼 */
+.reserve-btn {
+    /* 배경색 설정 */
+    background-color: #ffffff;
+    /* 글자 색상 설정 */
+    color: #000000;
+    /* 테두리 설정 */
+    border: 2px solid #ffffff;
+    /* 모서리 둥글게 설정 */
+    border-radius: 30px;
+    /* 안쪽 여백 설정 */
+    padding: 12px 30px;
+    /* 글자 크기 설정 */
+    font-size: 1.1rem;
+    /* 글자 굵기 설정 */
+    font-weight: bold;
+    /* 링크 밑줄 제거 */
+    text-decoration: none;
+    /* 그림자 효과 제거 */
+    box-shadow: none;
+    /* 글자 그림자 효과 제거 */
+    text-shadow: none;
+    /* 마우스 커서 설정 */
+    cursor: pointer;
+    /* 부드럽게 변하는 효과 */
+    transition: all 0.3s ease;
+    /* 인라인 블록으로 표시 */
+    display: inline-block;
+}
+
+/* 예약하기 버튼에 마우스를 올렸을 때 */
+.reserve-btn:hover {
+    /* 배경색 변경 */
+    background-color: transparent;
+    /* 글자 색상 변경 */
+    color: #ffffff;
+    /* 그림자 효과 없음 */
+    box-shadow: none;
+    /* 글자 그림자 효과 없음 */
+    text-shadow: none;
+}
+
+/* 화살표 버튼 공통 스타일 */
+.arrow {
+    /* 절대적 위치 설정 */
+    position: absolute;
+    /* 상단에서 50% 위치 */
+    top: 50%;
+    /* 변환: 세로 중앙 정렬 */
+    transform: translateY(-50%);
+    /* 배경색 설정 (투명) */
+    background-color: transparent;
+    /* 테두리 없음 */
+    border: none;
+    /* 크기 설정 */
+    width: 50px;
+    height: 50px;
+    /* 글자 크기 설정 */
+    font-size: 2rem;
+    /* 글자 색상 설정 (흰색) */
+    color: #ffffff;
+    /* 마우스 커서 설정 */
+    cursor: pointer;
+    /* 다른 요소보다 앞에 배치 */
+    z-index: 10;
+    /* 부드럽게 변하는 효과 */
+    transition: all 0.3s ease;
+}
+
+/* 화살표 버튼에 마우스를 올렸을 때 */
+.arrow:hover {
+    /* 글자 크기 약간 키우기 */
+    font-size: 2.2rem;
+}
+
+/* 왼쪽 화살표 버튼 */
+.arrow.left {
+    /* 왼쪽 위치 설정 */
+    left: 20px;
+}
+
+/* 오른쪽 화살표 버튼 */
+.arrow.right {
+    /* 오른쪽 위치 설정 */
+    right: 20px;
+}
+
+/* 반응형 디자인 - 모바일 화면 */
+@media (max-width: 768px) {
+    /* 헤더 스타일 조정 */
+    .main-header {
+        /* 세로로 정렬 변경 */
+        flex-direction: column;
+        /* 안쪽 여백 조정 */
+        padding: 15px 20px;
+        /* 간격 조정 */
+        gap: 15px;
+    }
+    
+    /* 로고와 브랜드 이름을 감싸는 컨테이너 */
+    .logo-container {
+        /* 가로로 정렬 */
+        display: flex;
+        /* 세로 가운데 정렬 */
+        align-items: center;
+        /* 간격 설정 */
+        gap: 10px;
+    }
+    
+    /* 네비게이션 메뉴 조정 */
+    .main-nav {
+        /* 너비를 100%로 설정 */
+        width: 100%;
+        /* 간격 조정 */
+        gap: 15px;
+    }
+    
+    /* 로그인 버튼 조정 */
+    .login-btn {
+        /* 너비를 100%로 설정 */
+        width: 100%;
+        /* 안쪽 여백 조정 */
+        padding: 10px;
+    }
+    
+    /* 히어로 캐러셀 영역 조정 */
+    .hero-carousel {
+        /* 높이 조정 */
+        height: 100vh;
+        /* 최소 높이 조정 */
+        min-height: 400px;
+    }
+    
+    /* 브랜드 타이틀 조정 */
+    .brand-title {
+        /* 글자 크기 조정 */
+        font-size: 2rem;
+    }
+    
+    /* 슬라이드 내용의 h3 태그 조정 */
+    .slide-content h3 {
+        /* 글자 크기 조정 */
+        font-size: 1.4rem;
+    }
+    
+    /* 슬라이드 내용의 p 태그 조정 */
+    .slide-content p {
+        /* 글자 크기 조정 */
+        font-size: 1rem;
+    }
+    
+    /* 예약하기 버튼 조정 */
+    .reserve-btn {
+        /* 안쪽 여백 조정 */
+        padding: 10px 25px;
+        /* 글자 크기 조정 */
+        font-size: 1rem;
+        /* 글자 그림자 효과 제거 */
+        text-shadow: none;
+    }
+    
+    /* 화살표 버튼 조정 */
+    .arrow {
+        /* 크기 조정 */
+        width: 40px;
+        height: 40px;
+        /* 글자 크기 조정 */
+        font-size: 1.5rem;
+        /* 배경색 유지 (투명) */
+        background-color: transparent;
+        /* 글자 색상 유지 (흰색) */
+        color: #ffffff;
+    }
+}
