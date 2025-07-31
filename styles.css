@@ -935,6 +935,16 @@ body {
     z-index: 1;
 }
 
+/* 모바일 화면에서 슬라이드 이미지 조정 */
+@media (max-width: 768px) {
+    .slide {
+        /* 배경 이미지 위치 조정 - 모바일에서 더 잘 보이게 */
+        background-position: center 20%;
+        /* 배경 이미지 크기 조정 - 모바일에서 더 많은 부분 보이게 */
+        background-size: 150% auto;
+    }
+}
+
 /* 활성화된 슬라이드 */
 .slide.active {
     /* 투명도 1로 설정 (보임) */
@@ -1124,10 +1134,12 @@ body {
     
     /* 히어로 캐러셀 영역 조정 */
     .hero-carousel {
-        /* 높이 조정 */
-        height: 100vh;
+        /* 높이 조정 - 모바일에서 더 작게 */
+        height: 70vh;
         /* 최소 높이 조정 */
-        min-height: 400px;
+        min-height: 350px;
+        /* 최대 높이 조정 */
+        max-height: 600px;
     }
     
     /* 브랜드 타이틀 조정 */
@@ -1146,6 +1158,18 @@ body {
     .slide-content p {
         /* 글자 크기 조정 */
         font-size: 1rem;
+        /* 줄 간격 조정 */
+        line-height: 1.4;
+        /* 아래쪽 여백 조정 */
+        margin-bottom: 1.5rem;
+    }
+    
+    /* 슬라이드 내용 위치 조정 */
+    .slide-content {
+        /* 상단에서 위치 조정 - 모바일에서 더 아래로 */
+        top: 60%;
+        /* 너비 조정 - 모바일에서 더 넓게 */
+        width: 90%;
     }
     
     /* 예약하기 버튼 조정 */
